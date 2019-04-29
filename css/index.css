@@ -401,6 +401,25 @@ footer {
     max-width: 600px;
     height: auto;
   }
+  /* end #img styles */
+
+  /* bottom-content styles */
+  #bottom-content .services {
+    padding: 40px 20px 20px 0;
+  }
+
+  #bottom-content .product {
+    padding: 15px 0 15px 0;
+  }
+
+  #bottom-content .vision {
+    padding: 15px 0 25px 0;
+  }
+
+  /* contact styles */
+  #contact {
+    padding-top: 30px;
+  }
 }
 /* end responsive mobile view index.html */
 
