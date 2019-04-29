@@ -1,3 +1,452 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/* general styles */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+hr {
+  width: 91%;
+}
+
+/* index.html */
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+  align-items: center;
+}
+
+header .logo {
+  padding-right: 43px;
+}
+
+nav {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: silver;
+  padding-left: 6px;
+  font-size: 91%;
+}
+/* end header */
+
+/* cta */
+#cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-text {
+  width: 50%;
+  text-align: center;
+  padding-left: 87px;
+  padding-top: 130px;
+  padding-bottom: 25px;
+  line-height: 73px;
+  margin-bottom: 55px;
+}
+
+.cta-img {
+  width: 50%;
+  text-align: right;
+  padding-right: 42px;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+section h1 {
+  font-size: 78px;
+  letter-spacing: 3px;
+  padding-left: 17px;
+}
+
+a.btn {
+  border: 1px solid black;
+  padding: 7px 55px;
+  color: black;
+  text-decoration: none;
+}
+/* end cta */
+
+/* top content */
+#top-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features {
+  padding-left: 43px;
+  padding-top: 32px;
+  line-height: 17px;
+}
+
+.about {
+  padding-right: 20px;
+  padding-top: 32px;
+  line-height: 17px;
+}
+/* end top content */
+
+/* img */
+#img {
+  text-align: center;
+  padding-top: 40px;
+}
+/* end img */
+
+/* bottom-content */
+#bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.services {
+  padding-top: 37px;
+  padding-left: 45px;
+  /* padding-right: 50px; */
+  line-height: 17.2px;
+  width: 30%;
+}
+
+.product {
+  padding-top: 37px;
+  width: 30%;
+}
+
+.vision {
+  padding-top: 37px;
+  padding-right: 30px;
+  width: 30%;
+}
+/* end bottom-content */
+
+/* contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  padding-left: 45px;
+}
+
+#contact address {
+  line-height: 18px;
+}
+
+.contact-text {
+  padding-top: 12px;
+  line-height: 30px;
+}
+/* end contact */
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+/* end footer */
+/* end index.html */
+
+/* ----------------------------------- */
+
+/* services.html */
+/* general styles */
+.cta-hr {
+  width: 92%;
+}
+
+/* #cta-services */
+#cta-services {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 41px;
+}
+
+.cta-header-img {
+  padding-top: 24px;
+  padding-left: 40px;
+}
+
+.cta-services-text {
+  padding-top: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.cta-services-text h2 {
+  padding-bottom: 5px;
+  font-size: 26px;
+}
+/* end #cta-services */
+
+/* #services-main-content */
+#services-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: self;
+  margin-bottom: 55px;
+}
+
+.card1 {
+  margin-top: 32px;
+  margin-left: 17px;
+  border: 1px solid black;
+  width: 420px;
+  height: 300px;
+  padding: 23px;
+  line-height: 19px;
+}
+
+.card2 {
+  margin-top: 32px;
+  margin-right: 15px;
+  border: 1px solid black;
+  width: 420px;
+  height: 300px;
+  padding: 23px;
+  line-height: 19px;
+}
+.card3 {
+  margin-top: 32px;
+  margin-left: 12px;
+  border: 1px solid black;
+  width: 420px;
+  height: 300px;
+  padding: 23px;
+  line-height: 19px;
+}
+.card4 {
+  margin-top: 32px;
+  margin-right: 15px;
+  border: 1px solid black;
+  width: 420px;
+  height: 300px;
+  padding: 23px;
+  line-height: 19px;
+}
+.card5 {
+  margin-top: 32px;
+  margin-left: 12px;
+  border: 1px solid black;
+  width: 420px;
+  height: 300px;
+  padding: 23px;
+  line-height: 19px;
+}
+.card6 {
+  margin-top: 32px;
+  margin-right: 15px;
+  border: 1px solid black;
+  width: 420px;
+  height: 300px;
+  padding: 23px;
+  line-height: 19px;
+}
+
+a.services-main-content-link {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 32px;
+  text-decoration: none;
+  color: black;
+}
+
+p.services-main-content-text {
+  padding-bottom: 55px;
+}
+/* end services-main-content */
+
+/* service-facts */
+#service-facts {
+  display: flex;
+  margin-top: 50px;
+}
+
+.services-facts-text {
+  padding: 0 50px;
+}
+
+.services-facts-img {
+  margin-right: 50px;
+  padding-top: 5px;
+}
+
+ul {
+  list-style: square;
+  line-height: 25px;
+  margin-left: 25px;
+  padding-top: 15px;
+}
+/* end service-facts */
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+/* end of footer */
